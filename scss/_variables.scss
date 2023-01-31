@@ -1,0 +1,31 @@
+/*colores*/
+$bg-body:gold;
+
+$blue:blue;
+$green:green;
+/*medidas*/
+$ancho:720px;
+$alto:720px;
+/*medidas para pantallas*/
+$pantalla-md:768px;
+$pantalla-g:992px;
+$pantalla-xg:1024px;
+$espaciado:50px;
+
+/*mixins*/
+/*sin parametros*/
+@mixin flex-column-centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+/* mixins con parametros*/
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+/*condicionales*/
+/*@if*/
+$fiesta:navidad;

@@ -1,0 +1,48 @@
+/*cascada siempre va las variables primero*/ /*colores*/
+/*medidas*/
+/*medidas para pantallas*/
+/*mixins*/
+/*sin parametros*/
+/* mixins con parametros*/
+/*condicionales*/
+/*@if*/
+h1 {
+  margin-bottom: 60px;
+}
+
+/*creando el mixin*/
+/*usando mel mixin*/
+/*para usaro ponemos @ seguido de include (@include)*/
+.contenedor {
+  /*IMPORTANDO EL MIXIN*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* @include size(30px, 60px)*/
+}
+
+.boton, .cancelar, .aceptar {
+  width: 150px;
+  padding: 6px 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: blue;
+}
+
+.aceptar {
+  background: pink;
+}
+
+.cancelar {
+  background-color: gold;
+}
+
+/*@if*/
+body {
+  background-color: rgb(132, 127, 127);
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

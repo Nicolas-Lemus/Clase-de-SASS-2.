@@ -1,0 +1,10 @@
+$textos:
+"xg" 32px
+"l" 24px
+"s" 18px;
+
+@each $nombre, $fs in $textos{
+    .texto-#{$nombre}{
+        font-size: $fs;
+    }
+}

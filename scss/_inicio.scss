@@ -1,0 +1,54 @@
+h1{
+    margin-bottom:$espaciado + 10px;
+}
+
+/*creando el mixin*/
+@mixin flex-column-centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/*usando mel mixin*/
+/*para usaro ponemos @ seguido de include (@include)*/
+.contenedor{
+    /*IMPORTANDO EL MIXIN*/
+    @include flex-column-centrado;
+    /* @include size(30px, 60px)*/
+}
+.boton{
+    width: 150px;
+    padding: 6px 10px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+}
+.aceptar{
+    @extend .boton;
+    background: pink
+}
+.cancelar{
+    @extend .boton;
+    background-color: gold;
+}
+
+/*@if*/
+
+body {
+    @if $fiesta == pascuas {
+        background-color: pink;
+        color: #000;
+    } @else if $fiesta == padre {
+        background-color: blue;
+        color: $letra-clara;
+    } @else if $fiesta == navidad {
+        background-color: rgb(132, 127, 127);
+        color: blue;
+    } @else {
+        background-color: $bg-body;
+        font-style: $fuente-titulos;
+        color: $letra-clara;
+    }
+}
